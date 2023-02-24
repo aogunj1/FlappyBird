@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdScipt : MonoBehaviour
+public class pipeScript : MonoBehaviour
 {
-   public float flapStrength;
-   public Rigidbody2D myRigbody;
+    public float moveSpeed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +14,6 @@ public class BirdScipt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-        myRigbody.velocity = Vector2.up * flapStrength;
-    }
+        transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
 }

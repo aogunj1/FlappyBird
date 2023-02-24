@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 1248354856}
   - component: {fileID: 1248354858}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BiggestBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90a685b6a4899490787801fd152dffe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigbody: {fileID: 0}
+  myRigbody: {fileID: 1248354858}
 --- !u!58 &1248354857
 CircleCollider2D:
   m_ObjectHideFlags: 0
